@@ -146,5 +146,7 @@ int main() {
   // * classes começam com maiúsculas;
   // * identificadores de muitas palavras devem ser visualmente distinguíveis;
 
+  int *ptr = nullptr; // Definição de ponteiro para valor nulo;
+
   return 0;
 }
