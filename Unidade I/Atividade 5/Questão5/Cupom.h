@@ -1,5 +1,5 @@
 #ifndef CUPOM_H
-#define CUPOM
+#define CUPOM_H
 
 #include <iostream>
 
