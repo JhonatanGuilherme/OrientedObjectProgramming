@@ -44,15 +44,7 @@ void HugeInteger::add(HugeInteger anotherObject) {
 }
 
 bool HugeInteger::isEqualTo(HugeInteger anotherObject) {
-  if (this->numberLength == anotherObject.numberLength) {
-    for (int i = 0; i < this->numberLength; i++) {
-      if (this->hugeNumber[i] != anotherObject.hugeNumber[i])
-        return false;
-    }
-    return true;
-  }
-
-  return false;
+  return (this->hugeNumber == anotherObject.hugeNumber ? true : false);
 }
 
 bool HugeInteger::isNotEqualTo(HugeInteger anotherObject) {
@@ -60,16 +52,7 @@ bool HugeInteger::isNotEqualTo(HugeInteger anotherObject) {
 }
 
 bool HugeInteger::isGreaterThan(HugeInteger anotherObject) {
-  if (this->numberLength > anotherObject.numberLength) {
-    return true;
-  } else if (this->numberLength == anotherObject.numberLength) {
-    for (int i = 0; i < this->numberLength; i++) {
-      if (this->hugeNumber[i] > anotherObject.hugeNumber[i])
-        return true;
-    }
-  }
-
-  return false;
+  return (this->hugeNumber > anotherObject.hugeNumber ? true : false);
 }
 
 bool HugeInteger::isLessThan(HugeInteger anotherObject) {
