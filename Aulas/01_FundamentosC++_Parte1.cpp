@@ -15,16 +15,16 @@
       * Herança;
       * Polimorfismo;
 
-    C++ foi criada por Bjarne Stroustrup;
+    Linguagem C++ foi criada por Bjarne Stroustrup;
   
     > Paradigmas
       > Conceito: define a forma (e os recursos) para se resolver um problema;
       > Exemplos:
-        * Não Estruturado; (GoTo)
-        * Estruturado;
-        * Orientado a Objetos;
-        * Funcional;
-        * ...; 
+        * Não Estruturado; (Basic)
+        * Estruturado; (C)
+        * Orientado a Objetos; (C++, Java, Python)
+        * Funcional; (Javascript)
+        * ...;
 */
 
 //#include <istream> // Entrada de dados; (cin)
@@ -52,7 +52,7 @@
 
 extern int teste; // Indicando que a variável foi criada em outro arquivo;
 
-int main() {
+int main(void) {
   //std::cout << teste << std::endl;
   std::cout << "Digite 2 numeros: "; // '<<' = operador de bitwise sobrecarregado - envia o fluxo para saída;
   int n1 = 0, n2 = 0;
